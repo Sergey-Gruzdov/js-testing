@@ -6,6 +6,7 @@ const PORT = process.env.PORT
 app.use(express.json())
 app.use(cors());
 
+
 app.get("/todos", async (req, res) => {
     const todos = await getTodos()
     res.send(todos)
